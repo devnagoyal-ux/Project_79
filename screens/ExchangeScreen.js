@@ -30,7 +30,7 @@ export default class ExchangeScreen extends Component{
   addRequest =(itemName,itemDescription)=>{
     var userId = this.state.userId
     var randomRequestId = this.createUniqueId()
-    db.collection('requested_things').add({
+    db.collection('requested_items').add({
         "user_id": userId,
         "item_name":itemName,
         "item_description":itemDescription,
