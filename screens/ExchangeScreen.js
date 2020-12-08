@@ -42,7 +42,15 @@ export default class ExchangeScreen extends Component{
         itemDescription : ''
     })
 
-    return Alert.alert("Item Requested Successfully")
+    return Alert.alert( 
+      'Item ready to exchange ',
+    '',
+    [
+      {text : 'Ok',onPress:()=>{
+      this.props.navigation.navigate('HomeScreen')
+      }}
+      ]
+      );
   }
 
 
